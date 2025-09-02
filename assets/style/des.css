@@ -198,8 +198,8 @@ border-radius: 50%;
 
 }
 .img3{
-    width: 150px;
-    height: 150px; 
+    width: 200px;
+    height: 200px; 
     object-fit: cover;
 border-radius: 50%;
 margin: 0 auto;
@@ -266,4 +266,50 @@ z-index: 2;
   background-color: #fff;
   color: #000;
 }
+/* 00000000000000000000000000000000000000000000000 */
+.container {
+  margin: 20px;
+  font-family: sans-serif;
+}
+input[type="checkbox"] {
+  display: none;
+}
 
+
+label {
+  background-color: #0f34b8d1;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+label:hover {
+  background-color: #2e5bffa8;
+}
+
+
+.textbox {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin-top: 0;
+  transition: all 0.5s ease;
+}
+
+
+input[type="checkbox"]:checked ~ .textbox {
+  max-height: 100px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 400px;
+}
