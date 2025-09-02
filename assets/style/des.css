@@ -1,4 +1,5 @@
-.tit{
+ .tit{
+    padding-top: 20px;
     font-weight: bold;
     text-align: center;
     color: #a33278cf;
@@ -12,7 +13,8 @@
     height: 100vh;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:space-evenly;
+    gap: 10px;
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
@@ -23,11 +25,14 @@
     justify-items:center;
     align-items: center;
     padding-top: 40px;
-  gap: 50px;
-width: 300px;
-height: 400px;
-border-radius: 5px;
-background-color: hsla(334, 48%, 51%, 0.627) 
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+     gap: 50px;
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+     background-color: hsla(334, 48%, 51%, 0.627) 
 
 }
 .img1{
@@ -35,11 +40,61 @@ background-color: hsla(334, 48%, 51%, 0.627)
     height: 150px; 
     object-fit: cover;
 border-radius: 50%;
+margin: 0 auto;
+overflow: hidden;
+transform: 0.2s;
+z-index: 2;
+
 }
 .name1{
-   
-    font-size: 32px;
+   padding-top: 10px;
+    font-size: 36px;
     color: #5a0d3dcf;
+}
+.Adam::before{
+    content: "";
+    position: absolute;
+    top: -125%;
+    left: 0;
+    width: 100%;
+    height: 125px;
+    background: #7a095e;
+      border-bottom-left-radius: 125px ;
+    border-bottom-right-radius: 125px;
+    transition: 0.2s;
+    z-index: 1;
+}
+.Adam:hover::before{
+    top: 0;
+}
+.Adam:hover .img1 {
+    border: 6px solid #fff;
+    box-shadow: 0 0 0 6px #922f79;
+   
+}
+.footer {
+  width: 100%;
+  background-color: rgba(120, 30, 106, 0.7);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  position: absolute;
+  bottom: -60px; 
+  transition: bottom 0.3s ease;
+}
+.Adam:hover .footer {
+  bottom: 0; /* يظهر عند الهوفر */
+}
+.footer a {
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.footer a:hover {
+  background-color: #fff;
+  color: #000; /* الأيقونة تصبح سوداء */
 }
 .Andrey{
     display: flex;
@@ -47,6 +102,9 @@ border-radius: 50%;
     justify-items:center;
     align-items: center;
     padding-top: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s;
   gap: 50px;
 width: 300px;
 height: 400px;
@@ -58,6 +116,10 @@ background-color: hsla(334, 48%, 51%, 0.627)
     width: 150px;
     height: 150px; 
     object-fit: cover;
+    margin: 0 auto;
+overflow: hidden;
+transform: 0.2s;
+z-index: 2;
 border-radius: 50%;
 }
 .name2{
@@ -68,10 +130,140 @@ border-radius: 50%;
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    padding-top: 40px;
+    padding-top: 10px;
     gap: 50px;
     width: 300px;
     height: 400px;
     border-radius: 5px; 
 } 
+ .Andrey::before{
+    content: "";
+    position: absolute;
+    top: -125%;
+    left: 0;
+    width: 100%;
+    height: 125px;
+    background: #7a095e;
+      border-bottom-left-radius: 125px ;
+    border-bottom-right-radius: 125px;
+    transition: 0.2s;
+    z-index: 1;
+}
+.Andrey:hover::before{
+    top: 0;
+}
+.Andrey:hover .img2 {
+    border: 6px solid #fff;
+    box-shadow: 0 0 0 6px #922f79;
+   
+}
+.footer {
+  width: 100%;
+  background-color: rgba(120, 30, 106, 0.7);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  position: absolute;
+  bottom: -60px; 
+  transition: bottom 0.3s ease;
+}
+.Andrey:hover .footer {
+  bottom: 0; 
+}
+.footer a {
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.footer a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.Mariana{
+    display: flex;
+    flex-direction: column;
+    justify-items:center;
+    align-items: center;
+    padding-top: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+     gap: 50px;
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+     background-color: hsla(334, 48%, 51%, 0.627) 
+
+}
+.img3{
+    width: 150px;
+    height: 150px; 
+    object-fit: cover;
+border-radius: 50%;
+margin: 0 auto;
+overflow: hidden;
+transform: 0.2s;
+z-index: 2;
+}
+.name3{
+   
+    font-size: 36px;
+    color: #5a0d3dcf;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding-top: 50px;
+    gap: 50px;
+    width: 300px;
+    height: 400px;
+    border-radius: 5px; 
+} 
+ .Mariana::before{
+    content: "";
+    position: absolute;
+    top: -125%;
+    left: 0;
+    width: 100%;
+    height: 125px;
+    background: #7a095e;
+      border-bottom-left-radius: 125px ;
+    border-bottom-right-radius: 125px;
+    transition: 0.2s;
+    z-index: 1;
+}
+.Mariana:hover::before{
+    top: 0;
+}
+.Mariana:hover .img3 {
+    border: 6px solid #fff;
+    box-shadow: 0 0 0 6px #922f79;
+   
+}
+.footer {
+  width: 100%;
+  background-color: rgba(120, 30, 106, 0.7);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  position: absolute;
+  bottom: -60px; 
+  transition: bottom 0.3s ease;
+}
+.Mariana:hover .footer {
+  bottom: 0; 
+}
+.footer a {
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.footer a:hover {
+  background-color: #fff;
+  color: #000;
+}
 
