@@ -266,6 +266,8 @@ z-index: 2;
   background-color: #fff;
   color: #000;
 }
+
+
 /* 00000000000000000000000000000000000000000000000 */
 .container {
   margin: 20px;
@@ -312,4 +314,42 @@ input[type="text"] {
   border-radius: 5px;
   border: 1px solid #ccc;
   width: 400px;
+}
+/* 00000000000000000000000000000000 */
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 2rem;
+}
+
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+body:has(#dark:checked) {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+
+.theme {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.theme input[type="checkbox"] {
+  width: 10%;
+  height: 10%;
+}
+
+.textm{
+  text-align: center;
 }
